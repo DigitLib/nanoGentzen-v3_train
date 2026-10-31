@@ -184,19 +184,6 @@ python train.py \
 
 ---
 
-## Citation
-
-```bibtex
-@software{nanogentzen2026,
-  author = {nanoGentzen Authors and Contributors},
-  title = {nanoGentzen-v3: Neuro-Symbolic Typed-Decision Engine},
-  year = {2026},
-  url = {https://github.com/nanoGentzen/nanoGentzen}
-}
-```
-
----
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
