@@ -1,0 +1,23 @@
+{
+  "model_type": "nanogentzen",
+  "architectures": [
+    "GentzenPolicyValueModel"
+  ],
+  "auto_map": {
+    "AutoConfig": "configuration_nanogentzen.GentzenConfig",
+    "AutoModel": "modeling_nanogentzen.GentzenPolicyValueModel",
+    "AutoTokenizer": "tokenization_nanogentzen.LogicTokenizerHF"
+  },
+  "vocab_size": 95,
+  "block_size": 256,
+  "n_layer": 6,
+  "n_head": 8,
+  "n_embd": 256,
+  "num_rules": 11,
+  "max_antecedents": 32,
+  "use_pointer_pivot": true,
+  "pointer_dim": 64,
+  "num_epistemic_classes": 3,
+  "comma_token_id": 88,
+  "turnstile_token_ids": [5, 6, 7]
+}

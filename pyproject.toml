@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanogentzen"
+version = "3.0.0"
+description = "Saul Kripke (1965) Epistemic Neural Prover with Span Pointer Sequent Attention and Dyckhoff G4ip Calculus"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "nanoGentzen Authors & Contributors"}
+]
+keywords = [
+    "automated-theorem-proving",
+    "intuitionistic-logic",
+    "kripke-semantics",
+    "gentzen-calculus",
+    "deep-learning",
+    "transformers",
+    "formal-verification"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "transformers>=4.30.0",
+    "safetensors>=0.4.0",
+    "tqdm>=4.65.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/nanoGentzen/nanoGentzen"
+Repository = "https://github.com/nanoGentzen/nanoGentzen"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nanogentzen*"]
+
+[tool.setuptools.package-data]
+nanogentzen = ["vocab.json", "config.json", "*.json"]
+
